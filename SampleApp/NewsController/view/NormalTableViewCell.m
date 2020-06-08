@@ -64,26 +64,7 @@
             self.rightImageView;
         })];
         
-//        [self.contentView addSubview:({
-//            self.deleteButton = [[UIButton alloc]initWithFrame:CGRectMake(290, 80, 30, 20)];
-//            self.deleteButton.backgroundColor = [UIColor blueColor];
-//
-//            [self.deleteButton setTitle:@"X" forState:UIControlStateNormal];
-//            [self.deleteButton setTitle:@"O" forState:UIControlStateHighlighted];
-//
-//            [self.deleteButton addTarget:self action:@selector(clickDeleteButton) forControlEvents:UIControlEventTouchUpInside];
-//
-//
-//            self.deleteButton.layer.cornerRadius = 10;
-//            self.deleteButton.layer.masksToBounds = YES;
-//
-//
-//            self.deleteButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
-//            self.deleteButton.layer.borderWidth = 2;
-//
-//            self.deleteButton;
-//        })];
-//
+
         
         
         
@@ -114,24 +95,26 @@
     self.timeLable.text= bean.date;
     [self.timeLable sizeToFit];
 
-//    NSThread *downloadImageThread = [[NSThread alloc]initWithBlock:^{
-//        NSString *imageUrlString =[bean.customFields.thumbC objectAtIndex:0];
-//        NSURL *imageUrl = [NSURL URLWithString:imageUrlString];
-//        NSData *imageData = [ NSData dataWithContentsOfURL: imageUrl];
-//        UIImage *image =  [UIImage imageWithData: imageData];
-//        self.rightImageView.image = image;
-//    }];
-//
-//    downloadImageThread.name = @"downloadImageThread";
-//    [downloadImageThread start];
     
             NSString *imageUrlString =[bean.customFields.thumbC objectAtIndex:0];
             NSURL *imageUrl = [NSURL URLWithString:imageUrlString];
     
-    [self.rightImageView sd_setImageWithURL:imageUrl completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-       
-    }];
+//    [self.rightImageView sd_setImageWithURL:imageUrl completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//
+//    }];
+//
     
+    
+    dispatch_queue_global_t downloadQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_main_t mainQueue = dispatch_get_main_queue();
+    dispatch_async(downloadQueue, ^{
+        UIImage  *image = [UIImage imageWithData: [NSData dataWithContentsOfURL: imageUrl  ]];
+        dispatch_async(mainQueue, ^{
+            self.rightImageView.image = image;
+        });
+        
+        
+    });
     
 }
 

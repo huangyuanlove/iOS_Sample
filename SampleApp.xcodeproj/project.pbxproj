@@ -19,13 +19,14 @@
 		5BF29DE1245C309600EF0EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF29DE0245C309600EF0EB1 /* Assets.xcassets */; };
 		5BF29DE4245C309600EF0EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF29DE2245C309600EF0EB1 /* LaunchScreen.storyboard */; };
 		5BF29DE7245C309600EF0EB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF29DE6245C309600EF0EB1 /* main.m */; };
-		5BF29E15245C921200EF0EB1 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5BF29E14245C921200EF0EB1 /* icon.bundle */; };
 		5BF29E18245E9C3B00EF0EB1 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF29E17245E9C3B00EF0EB1 /* VideoViewController.m */; };
 		5BF29E1B245EBAFD00EF0EB1 /* RecmmendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF29E1A245EBAFD00EF0EB1 /* RecmmendViewController.m */; };
 		5BF29E1E245F118E00EF0EB1 /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF29E1D245F118E00EF0EB1 /* NormalTableViewCell.m */; };
 		5BF29E21246066E200EF0EB1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF29E20246066E200EF0EB1 /* DetailViewController.m */; };
 		5BF29E242461192100EF0EB1 /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF29E232461192100EF0EB1 /* DeleteCellView.m */; };
 		90EB954784FB45BDACFB5B43 /* libPods-icon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6A5C5E46FEAEEDA4A3248D /* libPods-icon.a */; };
+		F1CB09CA248CD21E00BD9839 /* VideoConverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CB09C9248CD21E00BD9839 /* VideoConverViewCell.m */; };
+		F1CB09CC248CE1CD00BD9839 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1CB09CB248CE1CD00BD9839 /* icon.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +53,6 @@
 		5BF29DE5245C309600EF0EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF29DE6245C309600EF0EB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BF29E0E245C90E000EF0EB1 /* icon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF29E14245C921200EF0EB1 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		5BF29E16245E9C3B00EF0EB1 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		5BF29E17245E9C3B00EF0EB1 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		5BF29E19245EBAFD00EF0EB1 /* RecmmendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecmmendViewController.h; sourceTree = "<group>"; };
@@ -65,6 +65,9 @@
 		5BF29E232461192100EF0EB1 /* DeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteCellView.m; sourceTree = "<group>"; };
 		6229A3126B30EE5714F803EB /* Pods-icon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-icon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-icon/Pods-icon.debug.xcconfig"; sourceTree = "<group>"; };
 		6F0E084F7866E350B6C2080E /* Pods-icon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-icon.release.xcconfig"; path = "Pods/Target Support Files/Pods-icon/Pods-icon.release.xcconfig"; sourceTree = "<group>"; };
+		F1CB09C8248CD21E00BD9839 /* VideoConverViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoConverViewCell.h; sourceTree = "<group>"; };
+		F1CB09C9248CD21E00BD9839 /* VideoConverViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoConverViewCell.m; sourceTree = "<group>"; };
+		F1CB09CB248CE1CD00BD9839 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		F67A1CDA367CE16408E663C3 /* libPods-SampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF10F0CD4394EA851A6074CE /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,8 +169,9 @@
 		5BF29DD3245C309500EF0EB1 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				F1CB09CB248CE1CD00BD9839 /* icon.bundle */,
+				F1CB09C5248CD0C300BD9839 /* VideoControll */,
 				5BF29E252461591500EF0EB1 /* NewsController */,
-				5BF29E14245C921200EF0EB1 /* icon.bundle */,
 				5BF29DD4245C309500EF0EB1 /* AppDelegate.h */,
 				5BF29DD5245C309500EF0EB1 /* AppDelegate.m */,
 				5BF29DDD245C309500EF0EB1 /* Main.storyboard */,
@@ -175,8 +179,6 @@
 				5BF29DE2245C309600EF0EB1 /* LaunchScreen.storyboard */,
 				5BF29DE5245C309600EF0EB1 /* Info.plist */,
 				5BF29DE6245C309600EF0EB1 /* main.m */,
-				5BF29E16245E9C3B00EF0EB1 /* VideoViewController.h */,
-				5BF29E17245E9C3B00EF0EB1 /* VideoViewController.m */,
 				5BF29E19245EBAFD00EF0EB1 /* RecmmendViewController.h */,
 				5BF29E1A245EBAFD00EF0EB1 /* RecmmendViewController.m */,
 			);
@@ -203,6 +205,17 @@
 				6F0E084F7866E350B6C2080E /* Pods-icon.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1CB09C5248CD0C300BD9839 /* VideoControll */ = {
+			isa = PBXGroup;
+			children = (
+				5BF29E16245E9C3B00EF0EB1 /* VideoViewController.h */,
+				5BF29E17245E9C3B00EF0EB1 /* VideoViewController.m */,
+				F1CB09C8248CD21E00BD9839 /* VideoConverViewCell.h */,
+				F1CB09C9248CD21E00BD9839 /* VideoConverViewCell.m */,
+			);
+			path = VideoControll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +268,7 @@
 				TargetAttributes = {
 					5BF29DD0245C309500EF0EB1 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1150;
 					};
 					5BF29E0D245C90E000EF0EB1 = {
 						CreatedOnToolsVersion = 11.4;
@@ -285,7 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF29E15245C921200EF0EB1 /* icon.bundle in Resources */,
+				F1CB09CC248CE1CD00BD9839 /* icon.bundle in Resources */,
 				5BF29DE4245C309600EF0EB1 /* LaunchScreen.storyboard in Resources */,
 				5BF29DE1245C309600EF0EB1 /* Assets.xcassets in Resources */,
 				5BF29DDF245C309500EF0EB1 /* Main.storyboard in Resources */,
@@ -356,6 +370,7 @@
 				5BF29E1B245EBAFD00EF0EB1 /* RecmmendViewController.m in Sources */,
 				5BF29E242461192100EF0EB1 /* DeleteCellView.m in Sources */,
 				5BF29DDC245C309500EF0EB1 /* NewsViewController.m in Sources */,
+				F1CB09CA248CD21E00BD9839 /* VideoConverViewCell.m in Sources */,
 				5B29629524619A7900DB8053 /* CustomFields.m in Sources */,
 				5BF29DD6245C309500EF0EB1 /* AppDelegate.m in Sources */,
 				5BF29E18245E9C3B00EF0EB1 /* VideoViewController.m in Sources */,
@@ -513,8 +528,9 @@
 			baseConfigurationReference = FF10F0CD4394EA851A6074CE /* Pods-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8PTA8RYNLM;
+				DEVELOPMENT_TEAM = B892QN6N8X;
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +538,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xuan.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -531,8 +549,9 @@
 			baseConfigurationReference = 3C5BED05EF2792B30E6A2CDC /* Pods-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8PTA8RYNLM;
+				DEVELOPMENT_TEAM = B892QN6N8X;
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,6 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xuan.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -550,8 +570,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8PTA8RYNLM;
-				INFOPLIST_FILE = icon/Info.plist;
+				DEVELOPMENT_TEAM = B892QN6N8X;
+				INFOPLIST_FILE = SampleApp/info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				ONLY_ACTIVE_ARCH = YES;
@@ -569,8 +589,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8PTA8RYNLM;
-				INFOPLIST_FILE = icon/Info.plist;
+				DEVELOPMENT_TEAM = B892QN6N8X;
+				INFOPLIST_FILE = SampleApp/info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				ONLY_ACTIVE_ARCH = YES;
