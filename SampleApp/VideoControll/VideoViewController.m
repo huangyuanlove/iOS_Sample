@@ -8,6 +8,7 @@
 
 #import "VideoViewController.h"
 #import "VideoConverViewCell.h"
+#import "VideoToolBar.h"
 @interface VideoViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @end
@@ -38,7 +39,7 @@
     flowLayout.minimumLineSpacing = 20;
     flowLayout.minimumInteritemSpacing = 10;
     
-    flowLayout.itemSize = CGSizeMake(self.view.bounds.size.width,self.view.bounds.size.width/16*9);
+    flowLayout.itemSize = CGSizeMake(self.view.bounds.size.width,self.view.bounds.size.width/16*9 +VideoToolBarHeight);
     
     
     

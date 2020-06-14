@@ -25,6 +25,8 @@
 		5BF29E21246066E200EF0EB1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF29E20246066E200EF0EB1 /* DetailViewController.m */; };
 		5BF29E242461192100EF0EB1 /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF29E232461192100EF0EB1 /* DeleteCellView.m */; };
 		90EB954784FB45BDACFB5B43 /* libPods-icon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6A5C5E46FEAEEDA4A3248D /* libPods-icon.a */; };
+		F10BEA9224965EA900C52CD7 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEA9124965EA900C52CD7 /* VideoPlayer.m */; };
+		F10BEA95249669C700C52CD7 /* VideoToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEA94249669C700C52CD7 /* VideoToolBar.m */; };
 		F1CB09CA248CD21E00BD9839 /* VideoConverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CB09C9248CD21E00BD9839 /* VideoConverViewCell.m */; };
 		F1CB09CC248CE1CD00BD9839 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1CB09CB248CE1CD00BD9839 /* icon.bundle */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,10 @@
 		5BF29E232461192100EF0EB1 /* DeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteCellView.m; sourceTree = "<group>"; };
 		6229A3126B30EE5714F803EB /* Pods-icon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-icon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-icon/Pods-icon.debug.xcconfig"; sourceTree = "<group>"; };
 		6F0E084F7866E350B6C2080E /* Pods-icon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-icon.release.xcconfig"; path = "Pods/Target Support Files/Pods-icon/Pods-icon.release.xcconfig"; sourceTree = "<group>"; };
+		F10BEA9024965EA900C52CD7 /* VideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+		F10BEA9124965EA900C52CD7 /* VideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
+		F10BEA93249669C700C52CD7 /* VideoToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoToolBar.h; sourceTree = "<group>"; };
+		F10BEA94249669C700C52CD7 /* VideoToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoToolBar.m; sourceTree = "<group>"; };
 		F1CB09C8248CD21E00BD9839 /* VideoConverViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoConverViewCell.h; sourceTree = "<group>"; };
 		F1CB09C9248CD21E00BD9839 /* VideoConverViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoConverViewCell.m; sourceTree = "<group>"; };
 		F1CB09CB248CE1CD00BD9839 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
@@ -214,6 +220,10 @@
 				5BF29E17245E9C3B00EF0EB1 /* VideoViewController.m */,
 				F1CB09C8248CD21E00BD9839 /* VideoConverViewCell.h */,
 				F1CB09C9248CD21E00BD9839 /* VideoConverViewCell.m */,
+				F10BEA9024965EA900C52CD7 /* VideoPlayer.h */,
+				F10BEA9124965EA900C52CD7 /* VideoPlayer.m */,
+				F10BEA93249669C700C52CD7 /* VideoToolBar.h */,
+				F10BEA94249669C700C52CD7 /* VideoToolBar.m */,
 			);
 			path = VideoControll;
 			sourceTree = "<group>";
@@ -370,6 +380,7 @@
 				5BF29E1B245EBAFD00EF0EB1 /* RecmmendViewController.m in Sources */,
 				5BF29E242461192100EF0EB1 /* DeleteCellView.m in Sources */,
 				5BF29DDC245C309500EF0EB1 /* NewsViewController.m in Sources */,
+				F10BEA95249669C700C52CD7 /* VideoToolBar.m in Sources */,
 				F1CB09CA248CD21E00BD9839 /* VideoConverViewCell.m in Sources */,
 				5B29629524619A7900DB8053 /* CustomFields.m in Sources */,
 				5BF29DD6245C309500EF0EB1 /* AppDelegate.m in Sources */,
@@ -381,6 +392,7 @@
 				5BF29E21246066E200EF0EB1 /* DetailViewController.m in Sources */,
 				5B29629324619A7900DB8053 /* NewsBean.m in Sources */,
 				5B29628324616CB600DB8053 /* ListLoader.m in Sources */,
+				F10BEA9224965EA900C52CD7 /* VideoPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
