@@ -9,6 +9,7 @@
 #import "NormalTableViewCell.h"
 #import "NewsBean.h"
 #import <SDWebImage.h>
+#import "ScreenAdapter.h"
 
 @interface NormalTableViewCell ()
 
@@ -30,7 +31,7 @@
     if(self){
         
         [self.contentView addSubview:({
-            self.titleLable= [[UILabel alloc]initWithFrame:CGRectMake(20, 15, self.contentView.frame.size.width, 30)];
+            self.titleLable= [[UILabel alloc]initWithFrame:UIRect(20, 15, self.contentView.frame.size.width, 30)];
             self.titleLable.font = [UIFont systemFontOfSize:16];
             self.titleLable.textColor = [UIColor blackColor];
             self.titleLable.numberOfLines = 2;
@@ -40,7 +41,7 @@
         
         [self.contentView addSubview:({
 
-            self.excerpt= [[UILabel alloc]initWithFrame:CGRectMake(20, self.titleLable.frame.size.height +15, self.contentView.frame.size.width, 20)];
+            self.excerpt= [[UILabel alloc]initWithFrame:UIRect(20, self.titleLable.frame.size.height +15, self.contentView.frame.size.width, 20)];
             self.excerpt.font = [UIFont systemFontOfSize:12];
             self.excerpt.textColor = [UIColor grayColor];
             self.excerpt.numberOfLines = 2;
@@ -48,19 +49,19 @@
             self.excerpt;
         })];
         [self.contentView addSubview:({
-            self.commentLable= [[UILabel alloc]initWithFrame:CGRectMake(20, 80, 50, 20)];
+            self.commentLable= [[UILabel alloc]initWithFrame:UIRect(20, 80, 50, 20)];
             self.commentLable.font = [UIFont systemFontOfSize:12];
             self.commentLable.textColor = [UIColor grayColor];
             self.commentLable;
         })];
         [self.contentView addSubview:({
-            self.timeLable= [[UILabel alloc]initWithFrame:CGRectMake(150, 80, 50, 20)];
+            self.timeLable= [[UILabel alloc]initWithFrame:UIRect(150, 80, 50, 20)];
             self.timeLable.textColor = [UIColor grayColor];
             self.timeLable.font = [UIFont systemFontOfSize:12];
             self.timeLable;
         })];
         [self.contentView addSubview:({
-            self.rightImageView= [[UIImageView alloc]initWithFrame:CGRectMake(self.contentView.frame.size.width, 15, 70, 70)];
+            self.rightImageView= [[UIImageView alloc]initWithFrame:UIRect(self.contentView.frame.size.width, 15, 70, 70)];
             self.rightImageView;
         })];
         

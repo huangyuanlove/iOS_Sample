@@ -45,6 +45,17 @@
             
             UIView *view = [[UIView alloc]initWithFrame:CGRectMake(scrollView.bounds.size.width *i, 0, scrollView.bounds.size.width, scrollView.bounds.size.height)];
             view.backgroundColor = [colorArray objectAtIndex:i];
+            
+            [view addSubview:({
+                
+                UIButton *toastButton = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+                toastButton.backgroundColor = [UIColor redColor];
+                [toastButton addTarget:self action:@selector(showToast) forControlEvents:UIControlEventTouchDown];
+                toastButton;
+                
+                
+            })];
+            
             view;
             
             
@@ -55,6 +66,27 @@
     
     scrollView.pagingEnabled = YES;
     [self.view addSubview:scrollView];
+    
+}
+
+
+-(void) showToast{
+    NSLog(@"点击");
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"这是标题" message:@"这是message" preferredStyle:UIAlertControllerStyleAlert ];
+    
+    UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"action title" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"firstAction handler");
+    }];
+    
+    
+    [alertController addAction:firstAction];
+    
+    
+    
+    [self presentViewController:alertController animated:YES completion:^{
+        NSLog(@"alertCompletion");
+    }];
     
 }
 

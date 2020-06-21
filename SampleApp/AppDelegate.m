@@ -48,6 +48,7 @@
     
     UINavigationController *rootViewController =  [[UINavigationController alloc]initWithRootViewController:tableViewController];
     
+
     
     
     
@@ -71,6 +72,16 @@
     
     NSLog(@"didSelectViewController");
     
+}
+
+
+
+#pragma mark -- URL
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    NSLog(@"url : %@",url);
+    NSLog(@"options: %@",options);
+    return YES;
 }
 
 
