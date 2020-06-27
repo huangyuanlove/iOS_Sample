@@ -78,6 +78,8 @@
         [strongSelf.tableView reloadData];
     }];
     
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    
     
 
 }

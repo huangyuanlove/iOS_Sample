@@ -10,6 +10,9 @@
 #import "NewsViewController.h"
 #import "VideoViewController.h"
 #import "RecmmendViewController.h"
+#import "MineViewController.h"
+#import "HYLocation.h"
+#import "HYNotification.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -36,8 +39,8 @@
     RecmmendViewController * recmmendViewController = [[RecmmendViewController alloc]init];
     
     
-    UIViewController * mineViewController = [[UIViewController alloc]init];
-    mineViewController.view.backgroundColor = [UIColor blueColor];
+    MineViewController * mineViewController = [[MineViewController alloc]init];
+
     mineViewController.tabBarItem.title = @"我的";
     mineViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
     mineViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
@@ -56,6 +59,9 @@
     self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     
+    
+    [[HYLocation locationManager] checkLocationAuthorization];
+    [[HYNotification notificationManager]checkNotificationAuthorization];
     
     return YES;
 }

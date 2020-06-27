@@ -27,6 +27,10 @@
 		F10BEA9224965EA900C52CD7 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEA9124965EA900C52CD7 /* VideoPlayer.m */; };
 		F10BEA95249669C700C52CD7 /* VideoToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEA94249669C700C52CD7 /* VideoToolBar.m */; };
 		F10BEA98249E27BE00C52CD7 /* ScreenAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEA97249E27BE00C52CD7 /* ScreenAdapter.m */; };
+		F10BEA9B249FA20000C52CD7 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEA9A249FA20000C52CD7 /* MineViewController.m */; };
+		F10BEA9E249FA34800C52CD7 /* HYLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEA9D249FA34800C52CD7 /* HYLocation.m */; };
+		F10BEAA1249FAF7100C52CD7 /* HYNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEAA0249FAF7100C52CD7 /* HYNotification.m */; };
+		F10BEAA424A38A3200C52CD7 /* HYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEAA324A38A3200C52CD7 /* HYSearchBar.m */; };
 		F1CB09CA248CD21E00BD9839 /* VideoConverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CB09C9248CD21E00BD9839 /* VideoConverViewCell.m */; };
 		F1CB09CC248CE1CD00BD9839 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1CB09CB248CE1CD00BD9839 /* icon.bundle */; };
 /* End PBXBuildFile section */
@@ -72,6 +76,14 @@
 		F10BEA94249669C700C52CD7 /* VideoToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoToolBar.m; sourceTree = "<group>"; };
 		F10BEA96249E27BE00C52CD7 /* ScreenAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenAdapter.h; sourceTree = "<group>"; };
 		F10BEA97249E27BE00C52CD7 /* ScreenAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenAdapter.m; sourceTree = "<group>"; };
+		F10BEA99249FA20000C52CD7 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		F10BEA9A249FA20000C52CD7 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		F10BEA9C249FA34800C52CD7 /* HYLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYLocation.h; sourceTree = "<group>"; };
+		F10BEA9D249FA34800C52CD7 /* HYLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYLocation.m; sourceTree = "<group>"; };
+		F10BEA9F249FAF7100C52CD7 /* HYNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYNotification.h; sourceTree = "<group>"; };
+		F10BEAA0249FAF7100C52CD7 /* HYNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYNotification.m; sourceTree = "<group>"; };
+		F10BEAA224A38A3200C52CD7 /* HYSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYSearchBar.h; sourceTree = "<group>"; };
+		F10BEAA324A38A3200C52CD7 /* HYSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYSearchBar.m; sourceTree = "<group>"; };
 		F1CB09C8248CD21E00BD9839 /* VideoConverViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoConverViewCell.h; sourceTree = "<group>"; };
 		F1CB09C9248CD21E00BD9839 /* VideoConverViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoConverViewCell.m; sourceTree = "<group>"; };
 		F1CB09CB248CE1CD00BD9839 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
@@ -189,6 +201,14 @@
 				5BF29E1A245EBAFD00EF0EB1 /* RecmmendViewController.m */,
 				F10BEA96249E27BE00C52CD7 /* ScreenAdapter.h */,
 				F10BEA97249E27BE00C52CD7 /* ScreenAdapter.m */,
+				F10BEA99249FA20000C52CD7 /* MineViewController.h */,
+				F10BEA9A249FA20000C52CD7 /* MineViewController.m */,
+				F10BEA9C249FA34800C52CD7 /* HYLocation.h */,
+				F10BEA9D249FA34800C52CD7 /* HYLocation.m */,
+				F10BEA9F249FAF7100C52CD7 /* HYNotification.h */,
+				F10BEAA0249FAF7100C52CD7 /* HYNotification.m */,
+				F10BEAA224A38A3200C52CD7 /* HYSearchBar.h */,
+				F10BEAA324A38A3200C52CD7 /* HYSearchBar.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -381,16 +401,20 @@
 				5BF29E1B245EBAFD00EF0EB1 /* RecmmendViewController.m in Sources */,
 				5BF29E242461192100EF0EB1 /* DeleteCellView.m in Sources */,
 				5BF29DDC245C309500EF0EB1 /* NewsViewController.m in Sources */,
+				F10BEA9E249FA34800C52CD7 /* HYLocation.m in Sources */,
+				F10BEA9B249FA20000C52CD7 /* MineViewController.m in Sources */,
 				F10BEA95249669C700C52CD7 /* VideoToolBar.m in Sources */,
 				F1CB09CA248CD21E00BD9839 /* VideoConverViewCell.m in Sources */,
 				5B29629524619A7900DB8053 /* CustomFields.m in Sources */,
 				5BF29DD6245C309500EF0EB1 /* AppDelegate.m in Sources */,
 				5BF29E18245E9C3B00EF0EB1 /* VideoViewController.m in Sources */,
 				5BF29E1E245F118E00EF0EB1 /* NormalTableViewCell.m in Sources */,
+				F10BEAA1249FAF7100C52CD7 /* HYNotification.m in Sources */,
 				5B29629424619A7900DB8053 /* NewAuthor.m in Sources */,
 				5BF29DE7245C309600EF0EB1 /* main.m in Sources */,
 				5B29629624619A7900DB8053 /* NewsModel.m in Sources */,
 				5BF29E21246066E200EF0EB1 /* DetailViewController.m in Sources */,
+				F10BEAA424A38A3200C52CD7 /* HYSearchBar.m in Sources */,
 				5B29629324619A7900DB8053 /* NewsBean.m in Sources */,
 				F10BEA98249E27BE00C52CD7 /* ScreenAdapter.m in Sources */,
 				5B29628324616CB600DB8053 /* ListLoader.m in Sources */,

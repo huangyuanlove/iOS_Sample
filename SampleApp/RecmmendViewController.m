@@ -7,7 +7,8 @@
 //
 
 #import "RecmmendViewController.h"
-
+#import "HYSearchBar.h"
+#import "ScreenAdapter.h"
 @interface RecmmendViewController ()<UIScrollViewDelegate>
 
 @end
@@ -31,64 +32,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:self.view.bounds];
-    scrollView.backgroundColor = [UIColor lightGrayColor];
-    scrollView.contentSize = CGSizeMake(self.view.bounds.size.width * 5, self.view.bounds.size.height);
-    scrollView.delegate = self;
-    
-    NSArray * colorArray = @[[UIColor redColor],[UIColor greenColor],[UIColor yellowColor],[UIColor blueColor],[UIColor grayColor]];
-    
-    
-    for(int i =0;i < 5;i++){
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    [self.view addSubview:({
+        HYSearchBar *searchBar = [[HYSearchBar alloc]initWithFrame:CGRectMake(100, 0, SCREEN_WIDTH-UI(20), self.navigationController.navigationBar.bounds.size.height)];
         
-        [scrollView addSubview:({
-            
-            UIView *view = [[UIView alloc]initWithFrame:CGRectMake(scrollView.bounds.size.width *i, 0, scrollView.bounds.size.width, scrollView.bounds.size.height)];
-            view.backgroundColor = [colorArray objectAtIndex:i];
-            
-            [view addSubview:({
-                
-                UIButton *toastButton = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-                toastButton.backgroundColor = [UIColor redColor];
-                [toastButton addTarget:self action:@selector(showToast) forControlEvents:UIControlEventTouchDown];
-                toastButton;
-                
-                
-            })];
-            
-            view;
-            
-            
-        })];
         
-    }
-    
-    
-    scrollView.pagingEnabled = YES;
-    [self.view addSubview:scrollView];
+        searchBar;
+    })];
     
 }
 
 
--(void) showToast{
-    NSLog(@"点击");
-    
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"这是标题" message:@"这是message" preferredStyle:UIAlertControllerStyleAlert ];
-    
-    UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"action title" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"firstAction handler");
-    }];
-    
-    
-    [alertController addAction:firstAction];
-    
-    
-    
-    [self presentViewController:alertController animated:YES completion:^{
-        NSLog(@"alertCompletion");
-    }];
-    
-}
+
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
    
